@@ -1,0 +1,12 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sidcastro/Interactive-Design-III.git",
+  "author": "Sidney Castro <sidneycastro96@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.1"
+  }
+}

@@ -1,0 +1,1 @@
+function calculate(n,e){return Math.round(n/e)+" miles per hour"}function myFunction(){document.getElementById("demo").innerHTML=calculate(55,3.5)}
