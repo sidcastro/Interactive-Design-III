@@ -2,7 +2,8 @@ var gulp = require("gulp"),
 uglify = require("gulp-uglify"),
 concat = require("gulp-concat"),
 sass = require("gulp-sass"),
-imagemin = require("gulp-imagemin");
+imagemin = require("gulp-imagemin"),
+jquery = require("jquery");
 
 // Bootstrap task
 gulp.task("sass", function() {
@@ -19,7 +20,6 @@ gulp.task("sass", function() {
 
 // Scripts task
 // Uglifies
-// ADD JQUERY? look at photo on phone
 gulp.task("scripts", function() {
   return gulp.src([
     "node_modules/jquery/dist/jquery.min.js",

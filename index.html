@@ -6,62 +6,72 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="dist/js/main.js"></script>
 </head>
-
 <body>
+  <nav>
+    <ul id="menu">
+      <li><a href="#main-heading">ABOUT</a></li>
+      <li><a href="#heading-1">PROBLEM</a></li>
+      <li><a href="#heading-2">BIOMETRICS</a></li>
+      <li><a href="#iphone-image">THE APP</a></li>
+      <li><a href="#heading-3">BENEFITS</a></li>
+    </nav>
+  </div>
   <div>
-    <h1 class="main-heading">Introducing NYC's contactless transit fare system:<br>Scan your hand to your next destination.</h1>
+    <h1 id="main-heading">Introducing NYC's contactless transit fare system:<br>Scan your hand to your next destination.</h1>
     <div class="container">
       <img src="src/images/home.jpg" class="main-image">
-      <img src="src/images/menu-bar-home.png" class="menu-bar">
     </div>
   </div>
   <div>
     <img src="src/images/subway-busy.jpg" class="background-image">
-    <h1 class="heading">It's Not Fare!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales imperdiet eros et laoreet. Morbi in finibus enim, sed feugiat lacus. In hac habitasse platea dictumst. Praesent eget faucibus ante. Cras sed cursus risus. Mauris porttitor orci quam, at tempus augue pellentesque sit amet. Suspendisse potenti. Maecenas bibendum aliquet est, quis rutrum leo cursus quis. Nunc non orci mauris. Nam sed eleifend sem. Aenean et magna vel lectus accumsan tincidunt. Fusce vestibulum varius tortor in aliquet.</p>
+    <h1 id="heading-1">It's Not Fare!</h1>
+    <p>It’s time we catch up with the evolving technology and innovation of the 21st century. Keeping track of your MetroCard or waiting in the perpetual slow-moving lines to re-load or replace a card is getting old. Riders are ready for a swipe-free world. The question is, how can we get back those extra 30 seconds that can make the difference between making or missing a train?</p>
   </div>
   <div>
     <img src="src/images/hand.jpg" class="background-image">
-    <h1 class="heading">The<br>BioMetric<br>MetroCard</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales imperdiet eros et laoreet. Morbi in finibus enim, sed feugiat lacus. In hac habitasse platea dictumst. Praesent eget faucibus ante. Cras sed cursus risus. Mauris porttitor orci quam, at tempus augue pellentesque sit amet. Suspendisse potenti. Maecenas bibendum aliquet est, quis rutrum leo cursus quis. Nunc non orci mauris. Nam sed eleifend sem. Aenean et magna vel lectus accumsan tincidunt. Fusce vestibulum varius tortor in aliquet.</p>
+    <h1 id="heading-2">The<br>BioMetric<br>MetroCard</h1>
+    <p>Simply prepay for trips ID'd by your hand-print, and enter the station with a quick swipe of just your hand. Goodbye MTA MetroCard hassle.</p>
   </div>
   <div>
-    <img src="src/images/iphone-x.png" class="iphone-image">
+    <img src="src/images/iphone-x.png" id="iphone-image">
     <div class="app-1-div">
       <p class="app-1-title">Track Trip History</p>
-      <p class="app-1-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum metus arcu, eu hendrerit odio lobortis sit amet.</p>
+      <p class="app-1-desc">View a list of your complete and recent trip history. See how much you’ve spent from each trip, the travel time, and other basics of every ride you’ve ever taken.</p>
     </div>
     <div class="app-2-div">
-      <p class="app-2-title">Track Trip History</p>
-      <p class="app-2-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum metus arcu, eu hendrerit odio lobortis sit amet.</p>
+      <p class="app-2-title">Autofill Metro Fare</p>
+      <p class="app-2-desc">Once you set up your account and link it to a credit or debit card, you can begin enjoying the speed and convenience of mobile fare autofill. Never stand in line to buy tickets ever again!</p>
     </div>
     <div class="app-3-div">
-      <p class="app-3-title">Track Trip History</p>
-      <p class="app-3-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum metus arcu, eu hendrerit odio lobortis sit amet.</p>
+      <p class="app-3-title">User-friendly</p>
+      <p class="app-3-desc">Straightforward, clean, simple interface making it super easy to access and locate different features and tools.</p>
     </div>
   </div>
-  <div>
+  <div class="scrolling-box">
     <img src="src/images/train.jpg" class="background-image">
-    <h1 class="heading">Benefits</h1>
+    <img src="src/images/pattern.png" class="bottom-pattern">
+    <h1 id="heading-3">Benefits</h1>
     <p>Never lose or forget your MetroCard again.
       <br>
       Decrease chances of missing the train.
       <br>
       Faster lines, less congestion, frictionless traffic-flow.
       <br>
-      Eliminate excessive litter.
-      <br>
       Flexible fare-payment options.
+      <br>
+      Eliminate excessive litter.
     </p>
   </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
