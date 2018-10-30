@@ -1,20 +1,47 @@
 var gulp = require("gulp"),
 uglify = require("gulp-uglify"),
-sass = require("gulp-sass");
+concat = require("gulp-concat"),
+sass = require("gulp-sass"),
+imagemin = require("gulp-imagemin");
+
+// Bootstrap task
+gulp.task("sass", function() {
+  return gulp.src([
+    "node_modules/bootstrap/scss/bootstrap.scss",
+    "src/scss/main.scss"
+  ])
+  .pipe(sass({
+    outputStyle: "compressed"
+  }).on("error", sass.logError))
+  .pipe(concat("main.css"))
+  .pipe(gulp.dest("dist/styles"));
+});
 
 // Scripts task
 // Uglifies
+// ADD JQUERY? look at photo on phone
 gulp.task("scripts", function() {
-  gulp.src("src/js/*.js")
+  return gulp.src([
+    "node_modules/jquery/dist/jquery.min.js",
+    "src/js/*.js"
+  ])
+  .pipe(concat("main.js"))
   .pipe(uglify())
-  .pipe(gulp.dest("dist/js"))
+  .pipe(gulp.dest("dist/js"));
 });
 
-// Styles task
-gulp.task()("styles", function() {
-  gulp.src("src/scss/*.scss")
-  .pipe(sass())
-  .pipe(gulp.dest("dist/styles"))
-})
+// Minimize images task
+gulp.task("images", function() {
+  return gulp.src("src/images/**")
+  .pipe(imagemin())
+  .pipe(gulp.dest("dist/images"))
+});
 
-gulp.task("default", ["scripts", "styles"]);
+// Watch task
+gulp.task("watch", function() {
+  gulp.watch("src/js/*.js", ["scripts"]);
+  gulp.watch("src/scss/**/*.scss", ["sass"]);
+  gulp.watch("src/images/**", ["images"]);
+});
+
+gulp.task("default", ["scripts", "sass", "images"]);
