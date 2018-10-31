@@ -4,9 +4,9 @@ $(document).ready(function() {
   // then add it to the clicked link
   $('#menu li a').on('click', function() {
     $('#menu li a').each(function(index) {
-      $(this).removeClass('complete');
+      $(this).removeClass('current');
     });
-    $(this).addClass('complete');
+    $(this).addClass('current');
   });
 });
 
