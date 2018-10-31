@@ -9,15 +9,3 @@ $(document).ready(function() {
     $(this).addClass('current');
   });
 });
-
-// $(document).ready(function() {
-//   $('<hr>').insertBefore(".app-3-div")
-// });
-//
-// $(document).ready(function() {
-//   $('<hr>').insertBefore(".app-2-div")
-// });
-//
-// $(document).ready(function() {
-//   $('<hr>').insertBefore(".app-1-div")
-// });
